@@ -46,7 +46,10 @@ export function FundingSection() {
               {/* Project cards grid */}
               <div className="flex items-center justify-center">
                 <div className="flex justify-start items-center mr-8">
-                  <img src="/left-chevron.png" className="h-8 w-20" />
+                  <img
+                    src="/left-chevron.png"
+                    className="h-8 w-20 cursor-pointer"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -72,7 +75,10 @@ export function FundingSection() {
                   />
                 </div>
                 <div className="flex justify-end items-center ml-8">
-                  <img src="/right-chevron.png" className="h-8 w-20" />
+                  <img
+                    src="/right-chevron.png"
+                    className="h-8 w-20 cursor-pointer"
+                  />
                 </div>
               </div>
             </TabsContent>
@@ -117,7 +123,10 @@ export function FundingSection() {
               {/* Project cards grid */}
               <div className="flex items-center justify-center">
                 <div className="flex justify-start items-center mr-8">
-                  <img src="/left-chevron.png" className="h-8 w-20" />
+                  <img
+                    src="/left-chevron.png"
+                    className="h-8 w-20 cursor-pointer"
+                  />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -143,7 +152,10 @@ export function FundingSection() {
                   />
                 </div>
                 <div className="flex justify-end items-center ml-8">
-                  <img src="/right-chevron.png" className="h-8 w-20" />
+                  <img
+                    src="/right-chevron.png"
+                    className="h-8 w-20 cursor-pointer"
+                  />
                 </div>
               </div>
             </TabsContent>
