@@ -1,31 +1,19 @@
-import { ProjectCard } from "./ProjectCard";
-import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { ProjectCardVertical } from "./ProjectCardVertical";
 
 export function FundingSection() {
   return (
     <section className="bg-orange-500 text-black py-16 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
+        <div className="">
           <h2 className="text-4xl font-bold mb-4">Funding & Support</h2>
           <p className="text-lg">
             Grow your business by leveraging a fully decentralized ecosystem.
           </p>
         </div>
 
-        {/* Decorative border */}
-        <div
-          className="h-4 bg-black mb-8"
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-            90deg,
-            black 0px,
-            black 8px,
-            transparent 8px,
-            transparent 16px
-          )`,
-          }}
-        ></div>
+        <img src="/pixels-divider.png" alt="" className="w-full my-16" />
 
         {/* Funding section */}
         <div className="mb-12">
@@ -36,84 +24,132 @@ export function FundingSection() {
           </p>
 
           {/* Tabs */}
-          <div className="flex gap-8 mb-8">
-            <button className="text-lg font-semibold text-black border-b-2 border-black pb-2">
-              Ecosystem Grants
-            </button>
-            <button className="text-lg font-semibold text-black/60 pb-2">
-              Treasure & Bounties
-            </button>
-            <button className="text-lg font-semibold text-black/60 pb-2">
-              Funds
-            </button>
-          </div>
+          <Tabs defaultValue="ecosystem-grants">
+            <TabsList className="flex gap-8 mb-8">
+              <TabsTrigger
+                value="ecosystem-grants"
+                className="text-lg font-semibold pb-2"
+              >
+                Ecosystem Grants
+              </TabsTrigger>
+              <TabsTrigger
+                value="treasure-bounties"
+                className="text-lg font-semibold pb-2"
+              >
+                Treasure & Bounties
+              </TabsTrigger>
+              <TabsTrigger value="funds" className="text-lg font-semibold pb-2">
+                Funds
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="ecosystem-grants">
+              {/* Project cards grid */}
+              <div className="flex items-center justify-center">
+                <div className="flex justify-start items-center mr-8">
+                  <img src="/left-chevron.png" className="h-8 w-20" />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <ProjectCardVertical
+                    title="Project 01: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 02: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 03: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 04: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                </div>
+                <div className="flex justify-end items-center ml-8">
+                  <img src="/right-chevron.png" className="h-8 w-20" />
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="treasure-bounties">More Coming...</TabsContent>
+            <TabsContent value="funds">More Coming...</TabsContent>
+          </Tabs>
         </div>
 
-        {/* Navigation arrows */}
-        <div className="flex items-center justify-between mb-8">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="text-black hover:bg-black/10"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </Button>
+        <img src="/pixels-divider.png" alt="" className="w-full my-16" />
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="text-black hover:bg-black/10"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Button>
-        </div>
+        {/* Funding section */}
+        <div className="mb-12">
+          <h3 className="text-3xl font-bold mb-4">Support</h3>
+          <p className="text-lg mb-8">
+            The ecosystem offers supplemental support for business development,
+            technical implementation, and other key objectives.
+          </p>
 
-        {/* Project cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <ProjectCard
-            title="Project 01: Nodes"
-            description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
-            variant="light"
-          />
-          <ProjectCard
-            title="Project 02: Nodes"
-            description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
-            variant="light"
-          />
-          <ProjectCard
-            title="Project 03: Nodes"
-            description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
-            variant="light"
-          />
-          <ProjectCard
-            title="Project 04: Nodes"
-            description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
-            variant="light"
-          />
+          {/* Tabs */}
+          <Tabs defaultValue="business-development">
+            <TabsList className="flex gap-8 mb-8">
+              <TabsTrigger
+                value="business-development"
+                className="text-lg font-semibold pb-2"
+              >
+                Business Development
+              </TabsTrigger>
+              <TabsTrigger
+                value="implementation-partners"
+                className="text-lg font-semibold pb-2"
+              >
+                Implementation Partners
+              </TabsTrigger>
+              <TabsTrigger
+                value="others"
+                className="text-lg font-semibold pb-2"
+              >
+                Others
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="business-development">
+              {/* Project cards grid */}
+              <div className="flex items-center justify-center">
+                <div className="flex justify-start items-center mr-8">
+                  <img src="/left-chevron.png" className="h-8 w-20" />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                  <ProjectCardVertical
+                    title="Project 01: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 02: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 03: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                  <ProjectCardVertical
+                    title="Project 04: Nodes"
+                    description="We support Web 3.0 teams and open-source projects through funding, advocacy, research and collaborations."
+                    variant="light"
+                  />
+                </div>
+                <div className="flex justify-end items-center ml-8">
+                  <img src="/right-chevron.png" className="h-8 w-20" />
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="treasure-bounties">More Coming...</TabsContent>
+            <TabsContent value="funds">More Coming...</TabsContent>
+          </Tabs>
         </div>
       </div>
     </section>

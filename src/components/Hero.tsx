@@ -10,7 +10,7 @@ export default function Hero() {
       />
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
         <div className="text-left bg-blue-900/20 backdrop-blur-lg border border-white/30 rounded-lg p-8 mx-4">
-          <h2 className="text-2xl font-bold text-white mb-6">About</h2>
+          <h2 className="text-xl font-extrabold text-white mb-6">About</h2>
           <p className="text-white/90 mb-4 leading-relaxed">
             Our mission is to nurture cutting-edge applications for
             decentralized web software protocols.
@@ -19,7 +19,7 @@ export default function Hero() {
             Our passion is delivering Web 3.0, a decentralized and fair internet
             where users control their own data, identity and destiny.
           </p>
-          <h3 className="text-2xl font-semibold text-white mb-4">
+          <h3 className="text-xl font-extrabold text-white mb-4">
             Web3 Foundation believes in an internet where:
           </h3>
           <ul className="text-white/90 space-y-2 text-left">

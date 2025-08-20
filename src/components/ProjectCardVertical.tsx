@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Separator } from "./ui/separator";
 
 interface ProjectCardProps {
   title: string;
@@ -6,7 +7,7 @@ interface ProjectCardProps {
   variant?: "dark" | "light";
 }
 
-export function ProjectCard({
+export function ProjectCardVertical({
   title,
   description,
   variant = "light",
@@ -17,9 +18,9 @@ export function ProjectCard({
 
   return (
     <div className={`bg-gray-50 rounded-lg overflow-hidden`}>
-      <div className="flex">
+      <div className="flex flex-col">
         {/* Image placeholder */}
-        <div className="w-48 bg-gray-200 flex-shrink-0"></div>
+        <div className="h-40 w-full bg-gray-300 flex-shrink-0"></div>
 
         {/* Content */}
         <div className="flex-1 p-6 flex flex-col justify-between">
@@ -29,6 +30,8 @@ export function ProjectCard({
               {description}
             </p>
           </div>
+
+          <Separator className="mt-4" />
 
           <div className="flex justify-between items-center gap-2 mt-4">
             <Link
