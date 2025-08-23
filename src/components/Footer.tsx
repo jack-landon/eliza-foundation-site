@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-stone-200 px-6 py-12">
-      <div className="max-w-7xl mx-auto flex items-start justify-between">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start justify-between">
         {/* Logo */}
         <div className="flex flex-col gap-2">
           <img src="/logo-black.png" alt="" className="h-12" />
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-8">
+        <div className="flex flex-row gap-8 mt-3 sm:mt-0">
           <Link
             href="https://x.com/FoundationEliza"
             target="_blank"
@@ -57,14 +57,14 @@ export default function Footer() {
               className="w-12 h-12 text-white hover:opacity-80 transition-opacity"
             />
           </Link>
-          <Link href="/" className="">
+          <Link href="#" className="">
             <img
               src="/icons/discord_icon.png"
               alt=""
               className="w-12 h-12 text-white hover:opacity-80 transition-opacity"
             />
           </Link>
-          <Link href="/" className="">
+          <Link href="#" className="">
             <img
               src="/icons/github_icon.png"
               alt=""

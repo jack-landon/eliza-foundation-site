@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export function DreamBuildSeparator() {
   return (
-    <div className="w-full h-12 flex items-center justify-center overflow-hidden bg-white">
+    <div className="absolute bottom-0 left-0 w-full h-12 flex items-center justify-center overflow-hidden bg-white z-20">
       {/* Left colored sections - mirrored */}
       <div className="flex">
         <div className="bg-blue-700 h-12 w-32"></div>
