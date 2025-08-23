@@ -34,12 +34,23 @@ export default function Footer() {
             <Link href="#" className="hover:text-gray-600 transition-colors">
               Blog
             </Link>
+            <Link
+              href="https://www.linkedin.com/company/eliza-foundation/about/?viewAsMember=true"
+              target="_blank"
+              className="hover:text-gray-600 transition-colors"
+            >
+              LinkedIn
+            </Link>
           </nav>
         </div>
 
         {/* Social Icons */}
         <div className="flex gap-8">
-          <Link href="/" className="">
+          <Link
+            href="https://x.com/FoundationEliza"
+            target="_blank"
+            className=""
+          >
             <img
               src="/icons/x_icon.png"
               alt=""

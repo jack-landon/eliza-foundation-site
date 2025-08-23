@@ -134,7 +134,7 @@ export function FundingSection() {
                 value="others"
                 className="text-lg font-semibold pb-2"
               >
-                Others
+                Other Support
               </TabsTrigger>
             </TabsList>
             <TabsContent value="business-development">
