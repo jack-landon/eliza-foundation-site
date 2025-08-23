@@ -15,28 +15,34 @@ export default function Hero() {
           <div className="text-left bg-blue-900/20 backdrop-blur-lg border border-white/30 rounded-lg p-8 mx-4">
             <h2 className="text-xl font-extrabold text-white mb-6">About</h2>
             <p className="text-white/90 mb-4 leading-relaxed">
-              Our mission is to nurture cutting-edge applications for
-              decentralized web software protocols.
+              Our mission is to accelerate the growth of applications built on
+              the Eliza Framework.
             </p>
             <p className="text-white/90 mb-6 leading-relaxed">
-              Our passion is delivering Web 3.0, a decentralized and fair
-              internet where users control their own data, identity and destiny.
+              We believe in a future where AI-driven systems are open,
+              decentralized, and accessible to all.
+            </p>
+            <p className="text-white/90 mb-6 leading-relaxed">
+              The Eliza Foundation provides funding, resources, and research
+              support to empower developers building next-generation AI agents
+              and applications.{" "}
             </p>
             <h3 className="text-xl font-extrabold text-white mb-4">
-              Web3 Foundation believes in an internet where:
+              Eliza Foundation envisions an internet where:
             </h3>
             <ul className="text-white/90 space-y-2 text-left">
               <li className="flex items-start">
                 <span className="text-blue-300 mr-2">•</span>
-                Users own their own data, not corporations
+                Developers are empowered to innovate without gatekeepers
               </li>
               <li className="flex items-start">
                 <span className="text-blue-300 mr-2">•</span>
-                Global digital transactions are secure
+                AI applications are open-source, transparent, and composable
               </li>
               <li className="flex items-start">
                 <span className="text-blue-300 mr-2">•</span>
-                Online exchanges of information and value are decentralized
+                Communities, not corporations, shape the future of intelligent
+                systems
               </li>
             </ul>
           </div>
