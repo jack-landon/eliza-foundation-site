@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "Eliza Foundation",
   description:
     "Accelerating the growth of applications built on the Eliza Framework.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
