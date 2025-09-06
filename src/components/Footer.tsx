@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start justify-between">
         {/* Logo */}
         <div className="flex flex-col gap-2">
-          <img src="/logo-black.png" alt="" className="h-12" />
+          <img src="/logo-black.png" alt="" className="h-6 sm:h-12" />
           {/* Navigation Links */}
           <nav className="flex flex-col text-black mt-4 font-bold">
             <Link href="#" className="hover:text-gray-600 transition-colors">

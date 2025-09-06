@@ -43,7 +43,7 @@ export function FundingSection() {
   ];
 
   return (
-    <section className="bg-orange-500 text-black py-16 px-6 ">
+    <section className="bg-[#FF5800] text-black py-16 px-6 ">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-16">

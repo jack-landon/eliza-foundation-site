@@ -8,7 +8,7 @@ export function ProjectsSection() {
   const isMobile = useIsMobile();
   return (
     <section className="bg-black text-white pt-16 pb-24 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl font-bold mb-6">Projects</h2>
           <p className="text-lg">

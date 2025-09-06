@@ -14,11 +14,11 @@ export default function Hero() {
           id="about-section"
           className="absolute top-0 left-0 w-full h-full text-sm sm:text-base flex flex-col items-center justify-center mt-4 sm:mt-8"
         >
-          <div className="text-left bg-blue-900/20 backdrop-blur-lg border border-white/30 rounded-lg p-3 sm:p-8 mx-4">
-            <h2 className="text-lg sm:text-xl font-extrabold text-white mb-3 sm:mb-6">
+          <div className="text-left bg-blue-700/60 backdrop-blur-lg border border-white/30 p-3 sm:p-8 mx-4 max-w-5xl">
+            <h2 className="text-lg sm:text-xl font-extrabold text-white mb-3">
               About
             </h2>
-            <p className="text-white/90 mb-4 leading-relaxed">
+            <p className="text-white/90 leading-relaxed">
               Our mission is to accelerate the growth of applications built on
               the Eliza Framework.
             </p>
