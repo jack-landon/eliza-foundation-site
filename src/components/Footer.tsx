@@ -14,38 +14,26 @@ export default function Footer() {
               About
             </Link>
             <Link href="#" className="hover:text-gray-600 transition-colors">
-              Projects
+              Support
             </Link>
             <Link href="#" className="hover:text-gray-600 transition-colors">
               Funding & Support
             </Link>
             <Link href="#" className="hover:text-gray-600 transition-colors">
-              Decentralized Nodes
+              Projects
             </Link>
-            <Link href="#" className="hover:text-gray-600 transition-colors">
-              Education
-            </Link>
-            <Link href="#" className="hover:text-gray-600 transition-colors">
-              Research
-            </Link>
-            <Link href="#" className="hover:text-gray-600 transition-colors">
-              Careers
-            </Link>
-            <Link href="#" className="hover:text-gray-600 transition-colors">
-              Blog
-            </Link>
-            <Link
+            {/* <Link
               href="https://www.linkedin.com/company/eliza-foundation/about/?viewAsMember=true"
               target="_blank"
               className="hover:text-gray-600 transition-colors"
             >
               LinkedIn
-            </Link>
+            </Link> */}
           </nav>
         </div>
 
         {/* Social Icons */}
-        <div className="flex flex-row gap-8 mt-3 sm:mt-0">
+        {/* <div className="flex flex-row gap-8 mt-3 sm:mt-0">
           <Link
             href="https://x.com/FoundationEliza"
             target="_blank"
@@ -71,7 +59,7 @@ export default function Footer() {
               className="w-12 h-12 text-white hover:opacity-80 transition-opacity"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

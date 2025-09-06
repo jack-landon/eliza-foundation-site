@@ -43,10 +43,10 @@ export function FundingSection() {
   ];
 
   return (
-    <section className="bg-orange-500 text-black py-16 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-orange-500 text-black py-16 px-6 ">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="">
+        <div className="mb-16">
           <h2 className="text-4xl font-bold mb-4">Funding & Support</h2>
           <p className="text-lg">
             Grow your project with Eliza Foundation funding and resources by
@@ -55,7 +55,7 @@ export function FundingSection() {
           </p>
         </div>
 
-        <img src="/pixels-divider.png" alt="" className="w-full my-16" />
+        {/* <img src="/pixels-divider.png" alt="" className="w-full my-16" /> */}
 
         {/* Funding section */}
         <div className="mb-12">
@@ -86,25 +86,33 @@ export function FundingSection() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="ecosystem-grants">
-              {/* Project cards grid */}
-              <p className="text-lg mb-8 ml-3">
-                Supporting developers who are pushing the boundaries of what’s
-                possible with Eliza-powered applications.
-              </p>
+              <ProjectCardVertical
+                title="Ecosystem Grants"
+                description="Supporting developers who are pushing the boundaries of what’s
+                possible with Eliza-powered applications."
+                imgSrc="/project-images/ecosystem-grants-img.png"
+                variant="light"
+              />
             </TabsContent>
             <TabsContent value="bounties-challenges">
-              <p className="text-lg mb-8 ml-3">
-                Rewarding contributors who solve key technical challenges or
-                contribute to core infrastructure.
-              </p>
+              <ProjectCardVertical
+                title="Bounties & Challenges"
+                description="Rewarding contributors who solve key technical challenges or
+                contribute to core infrastructure."
+                imgSrc="/project-images/ecosystem-grants-img.png"
+                variant="light"
+              />
             </TabsContent>
             <TabsContent value="funds">
-              <p className="text-lg mb-8 ml-3">
-                Supporting academics, researchers, and developers exploring the
-                next frontier of open AI systems.
-              </p>
+              <ProjectCardVertical
+                title="Research & Collaboration Funds"
+                description="Supporting academics, researchers, and developers exploring the
+                next frontier of open AI systems."
+                imgSrc="/project-images/ecosystem-grants-img.png"
+                variant="light"
+              />
             </TabsContent>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               {!isMobile && (
                 <div
                   onClick={() =>
@@ -155,114 +163,7 @@ export function FundingSection() {
                   />
                 </div>
               )}
-            </div>
-          </Tabs>
-        </div>
-
-        <img src="/pixels-divider.png" alt="" className="w-full my-16" />
-
-        {/* Funding section */}
-        <div className="mb-12">
-          <h3 className="text-3xl font-bold mb-4">Support</h3>
-          <p className="text-lg mb-8">
-            The Eliza ecosystem offers comprehensive support for builders — from
-            funding and technical guidance to research, education, and business
-            development partnerships.
-          </p>
-
-          {/* Tabs */}
-          <Tabs value={supportTab} onValueChange={setSupportTab}>
-            <TabsList className="flex gap-8 mb-8">
-              <TabsTrigger
-                value="business-development"
-                className="text-lg font-semibold pb-2"
-              >
-                Business Development
-              </TabsTrigger>
-              <TabsTrigger
-                value="implementation-partners"
-                className="text-lg font-semibold pb-2"
-              >
-                Implementation Partners
-              </TabsTrigger>
-              <TabsTrigger
-                value="others"
-                className="text-lg font-semibold pb-2"
-              >
-                Other Support
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="business-development">
-              {/* Project cards grid */}
-              <p className="text-lg mb-8 ml-3">
-                We provide mentorship, ecosystem connections, and resources to
-                help Eliza projects grow sustainably.
-              </p>
-            </TabsContent>
-            <TabsContent value="implementation-partners">
-              <p className="text-lg mb-8 ml-3">
-                Work with experienced teams to accelerate technical deployment
-                and integration of your Eliza-powered applications.
-              </p>
-            </TabsContent>
-            <TabsContent value="others">
-              <p className="text-lg mb-8 ml-3">
-                Access collaboration opportunities, educational programs, and
-                community-driven initiatives.
-              </p>
-            </TabsContent>
-            <div className="flex items-center justify-center">
-              {!isMobile && (
-                <div
-                  onClick={() =>
-                    goToPrevTab(supportTab, supportTabs, setSupportTab)
-                  }
-                  className="flex justify-start items-center mr-8"
-                >
-                  <img
-                    src="/left-chevron.png"
-                    className="h-8 w-20 cursor-pointer"
-                  />
-                </div>
-              )}
-
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                <ProjectCardVertical
-                  title="Project 01: Framework Development"
-                  description="Funding and supporting teams advancing the Eliza Framework itself — infrastructure, tooling, and core protocols."
-                  variant="light"
-                />
-                <ProjectCardVertical
-                  title="Project 02: AI Agents & Applications"
-                  description="Backing developers building intelligent agents, dApps, and consumer applications powered by Eliza."
-                  variant="light"
-                />
-                <ProjectCardVertical
-                  title="Project 03: Ecosystem Growth"
-                  description="Collaborating with partners to expand adoption and create real-world use cases for Eliza-powered AI."
-                  variant="light"
-                />
-                <ProjectCardVertical
-                  title="Project 04: Research & Education"
-                  description="Funding initiatives that advance AI safety, ethics, and decentralized governance within the Eliza ecosystem."
-                  variant="light"
-                />
-              </div>
-
-              {!isMobile && (
-                <div
-                  onClick={() =>
-                    goToNextTab(supportTab, supportTabs, setSupportTab)
-                  }
-                  className="flex justify-end items-center ml-8"
-                >
-                  <img
-                    src="/right-chevron.png"
-                    className="h-8 w-20 cursor-pointer"
-                  />
-                </div>
-              )}
-            </div>
+            </div> */}
           </Tabs>
         </div>
       </div>

@@ -13,13 +13,13 @@ import { Menu } from "lucide-react";
 
 const links = [
   "About",
-  "Projects",
+  "Support",
   "Funding & Support",
-  "Decentralized Nodes",
-  "Education",
-  "Research",
-  "Careers",
-  "Blog",
+  "Projects",
+  // "Education",
+  // "Research",
+  // "Careers",
+  // "Blog",
 ];
 
 function convertToLink(link: string) {
@@ -58,12 +58,12 @@ export default function Header() {
           </DrawerContent>
         </Drawer>
       ) : (
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-10 items-center">
           {links.map((link) => (
             <Link
               href={`/${convertToLink(link)}`}
               key={link}
-              className="font-semibold hover:underline text-sm lg:text-base"
+              className="font-bold hover:underline text-lg"
             >
               {link}
             </Link>
