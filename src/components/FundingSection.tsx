@@ -68,20 +68,23 @@ export function FundingSection() {
 
           {/* Tabs */}
           <Tabs value={fundingTab} onValueChange={setFundingTab}>
-            <TabsList className="flex gap-8 mb-8">
+            <TabsList className="items-start sm:items-center flex flex-col sm:flex-row sm:gap-8 mb-8">
               <TabsTrigger
                 value="ecosystem-grants"
-                className="text-lg font-semibold pb-2"
+                className="sm:text-lg font-semibold pb-2"
               >
                 Ecosystem Grants
               </TabsTrigger>
               <TabsTrigger
                 value="bounties-challenges"
-                className="text-lg font-semibold pb-2"
+                className="sm:text-lg font-semibold pb-2"
               >
                 Bounties & Challenges
               </TabsTrigger>
-              <TabsTrigger value="funds" className="text-lg font-semibold pb-2">
+              <TabsTrigger
+                value="funds"
+                className="sm:text-lg font-semibold pb-2"
+              >
                 Research & Collaboration Funds
               </TabsTrigger>
             </TabsList>

@@ -22,7 +22,11 @@ export function ProjectCardVertical({
     <div className={`bg-gray-50 overflow-hidden`}>
       <div className="flex flex-col">
         {/* Image placeholder */}
-        <img src={imgSrc} alt="" className="h-40 w-full flex-shrink-0" />
+        <img
+          src={imgSrc}
+          alt=""
+          className="h-40 w-full flex-shrink-0 object-cover"
+        />
 
         {/* Content */}
         <div className="flex-1 p-6 flex flex-col justify-between">
